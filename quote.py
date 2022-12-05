@@ -55,6 +55,8 @@ if __name__ == '__main__':
 
             if mention.reply:
 
+                print(f"Answersing notification id {notif.id}")
+
                 text_post = replay_text()
 
                 bot.replay(mention, text_post)

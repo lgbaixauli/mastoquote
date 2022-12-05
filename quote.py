@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
         aleatorio = random.choice(quotes)
 
-        post_text  = f"Quote: '{aleatorio}' \n\n"
+        post_text  = f", cita: '{aleatorio}' \n\n"
         post_text += f"(Mencióname con la palabra '{keyword}' y te iluminaré con la sabiduría de HAL 9000)."
         post_text = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
 
@@ -56,7 +56,6 @@ if __name__ == '__main__':
             if mention.reply:
 
                 text_post = replay_text()
-                print(f"text: {text_post}")
 
                 bot.replay(mention, text_post)
 

@@ -17,11 +17,16 @@ and then reply with a quote.
 
 Within Python Virtual Environment:
 
-1. Run `pip install -r requirements.txt` to install needed libraries.  
+1. Optionally, create a new user for running the bot: `adduser --disabled-login user_name`
 
-2. Run `python3 quote.py` manually once to bot setup and get its access token to Mastodon instance.
+1. Clone the repository `git clone https://github.com/lgbaixauli/mastoquote.git` 
 
-3. Use your favourite scheduling method to set `quote.sh` to run every minute. For example, 
-   add  `* * * * * /home/mastoquote/quote.sh 2>&1 | /usr/bin/logger -t MASTOQUOTE` in 
-   `crontab -e`. The system and error log will be in `/var/log/syslog`. Don't forgot the execution 
-   privilegies `chmod +x quote.sh`.
+2. Run `pip install -r requirements.txt` to install needed libraries.  
+
+3. Run `python3 quote.py` manually once to bot setup and get its access token to Mastodon instance.
+
+4. Use your favourite scheduling method to set `quote.sh` to run every minute. For example, 
+   add  `* * * * * /home/user_name/mastoquote/quote.sh 2>&1 | /usr/bin/logger -t MASTOSTATUS` in 
+   `crontab -e`. The system and error log will be in `/var/log/syslog`. 
+   Don't forgot the execution privilegies `chmod +x info.sh`. 
+   Don't forgot update the user_name in `quote.sh`

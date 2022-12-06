@@ -21,7 +21,8 @@ class Logger:
 
         handlers = []
         if config.get("logger.to_file", False):
-            handlers.append(logging.FileHandler(config.get("logger.filename", 'debug.log')))
+            filename = log_directory + "/" + config.get("logger.filename", 'debug.log')
+            handlers.append(logging.FileHandler(filename))
         if config.get("logger.to_stdout", False):
             handlers.append(logging.StreamHandler(sys.stdout))
 

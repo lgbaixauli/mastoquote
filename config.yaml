@@ -14,7 +14,7 @@ bot:
   # [String] Name of the app
   app_name: "quote"
   # [Bool] Force log in
-  force_login: True
+  force_login: False
   # [String] Name of the secrets directory
   secrets_directory: "secrets"
   # [String] Name of the secrets file path
@@ -26,10 +26,10 @@ bot:
 
 # Testing options
 testing:
-  # [Bool] Push the answer to Mastodon
-  push_answer: False
-  # [Bool] Push the answer to Mastodon
-  dismis_notification: False
+  # [Bool] Disable push the answer to Mastodon
+  disable_push_answer: False
+  # [Bool] Disable push the answer to Mastodon
+  disabe_dismis_notification: False
 
 # Logging config
 logger:

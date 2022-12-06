@@ -2,11 +2,13 @@
 This code publish quotes, if requested.  
 Based in the 'info' bot of @spla@mastodont.cat (https://git.mastodont.cat/spla/info)
 
-The bot listen to 'quote' word key:
+The bot listen to a keyword:
 
-@bot_username quote
+@bot_username keyword
 
 and then reply with a quote.
+
+There are some config options in the config.yaml file
 
 ### Dependencies
 
@@ -23,7 +25,7 @@ Within Python Virtual Environment:
 
 3. Run `pip install -r requirements.txt` to install needed libraries.  
 
-4. Choose the keyword an modify the `quote.py` file.
+4. Modify options in the `config.yaml` file. Fer exemple, the keyword or directories and files names.
 
 5. Run `python3 quote.py` manually once to bot setup and get its access token to Mastodon instance.
 

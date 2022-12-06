@@ -38,11 +38,11 @@ class Runner:
                 text_post = self.replay_text(keyword)
                 self._logger.debug ("answersing with\n" + text_post)
 
-                if self._config.get("testing.push_answer"):
+                if not self._config.get("testing.disable_push_answer"):
                     self._logger.info("answering notification id" + notif.id)
                     bot.replay(mention, text_post)
 
-            if self._config.get("testing.dismis_notification"):
+            if not self._config.get("testing.disable_dismis_notification"):
                 self._logger.info("dismissing notification id" + notif.id)
                 bot.mastodon.notifications_dismiss(notif.id)
 

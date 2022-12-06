@@ -1,0 +1,49 @@
+###########################
+#    Mastodon quote bot   #
+###########################
+
+# App Info
+app:
+  # [String] Name of the app
+  name: "quote"
+  # [String] Kewword to check
+  keyword: "HAL"
+
+# Mastobot config
+bot:
+  # [String] Name of the app
+  app_name: "quote"
+  # [Bool] Force log in
+  force_login: True
+  # [String] Name of the secrets directory
+  secrets_directory: "secrets"
+  # [String] Name of the secrets file path
+  secrets_file_path: "secrets.txt"
+  # [String] Name of the config directory
+  config_directory: "config"
+  # [String] Name of the config file path
+  config_file_path: "config.txt"
+
+# Testing options
+testing:
+  # [Bool] Push the answer to Mastodon
+  push_answer: False
+  # [Bool] Push the answer to Mastodon
+  dismis_notification: False
+
+# Logging config
+logger:
+  # [Integer] Log level: NOTSET=0 | DEBUG=10 | INFO=20 | WARN=30 | ERROR=40 | CRITICAL=50
+  loglevel: 10
+  # [String] Name of the logger
+  directory: "log"
+  # [String] Name of the logger
+  name: "mastoquote_bot"
+  # [Bool] Dump the log into a file
+  to_file: True
+  # [String] Path and filename of the log file
+  filename: "log/mastoquote_bot.log"
+  # [Bool] Dump the log into a stdout
+  to_stdout: True
+  # [String] Format of the log
+  format: "[%(asctime)s] %(levelname)-8s %(name)-12s %(message)s"

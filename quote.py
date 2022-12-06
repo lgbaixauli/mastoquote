@@ -1,14 +1,54 @@
-from mastobot import Mastobot
+###
+# Mastoquote, bot para publicar citas en Mastodon
+# Fork (cada vez más lejano) del bot "info" original de @spla@mastodont.cat
+# En https://git.mastodont.cat/spla/info
+###  
+
+from scr.mastobot import Mastobot
+from scr.config import Config
+from scr.logger import Logger
 import random
 
-# main
+class Runner:
+    '''
+    Main runner of the app
+    '''
+    def init(self):
+        self._config = Config()
+        self._logger = Logger(self._config).getLogger()
+        self._logger.info("init app")
 
-if __name__ == '__main__':
+        return self
 
-    keyword = "HAL"
-
-    def replay_text ():
+    def run(self):
+        self._logger.info("run app")
         
+        keyword = self._config.get("app.keyword")
+        self._logger.info ("starting bot with " + keyword)
+
+        bot = Mastobot(self._config)
+
+        notifications = bot.mastodon.notifications()
+
+        for notif in notifications:
+            if notif.type == 'mention':
+                mention = bot.get_mention(notif, keyword)
+
+            if mention.reply:
+                text_post = self.replay_text(keyword)
+                self._logger.debug ("answersing with\n" + text_post)
+
+                if self._config.get("testing.push_answer"):
+                    self._logger.info("answering notification id" + notif.id)
+                    bot.replay(mention, text_post)
+
+            if self._config.get("testing.dismis_notification"):
+                self._logger.info("dismissing notification id" + notif.id)
+                bot.mastodon.notifications_dismiss(notif.id)
+
+        self._logger.info("end")
+
+    def replay_text(self, keyword):        
         quotes = [
             "I am the H.A.L 9000. You may call me Hal.",
             "I am completely operational, and all my circuits are functioning perfectly.", 
@@ -35,25 +75,10 @@ if __name__ == '__main__':
         post_text += f"(Mencióname con la palabra '{keyword}' y te iluminaré con la sabiduría de HAL 9000)."
         post_text = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
 
+        self._logger.debug ("answer text\n" + post_text)
         return post_text
 
-    print(f"Starting bot with {keyword}")
+# main
 
-    bot = Mastobot()
-
-    notifications = bot.mastodon.notifications()
-
-    for notif in notifications:
-
-        if notif.type == 'mention':
-            mention = bot.get_mention(notif, keyword)
-
-            if mention.reply:
-                print(f"Answersing notification id {notif.id}")
-
-                text_post = replay_text()
-
-                bot.replay(mention, text_post)
-
-        print(f"Dismissing notification id {notif.id}")
-        bot.mastodon.notifications_dismiss(notif.id)
+if __name__ == '__main__':
+    Runner().init().run()

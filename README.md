@@ -23,9 +23,11 @@ Within Python Virtual Environment:
 
 3. Run `pip install -r requirements.txt` to install needed libraries.  
 
-4. Run `python3 quote.py` manually once to bot setup and get its access token to Mastodon instance.
+4. Choose the keyword an modify the `quote.py` file.
 
-5. Use your favourite scheduling method to set `quote.sh` to run every minute. For example, 
+5. Run `python3 quote.py` manually once to bot setup and get its access token to Mastodon instance.
+
+6. Use your favourite scheduling method to set `quote.sh` to run every minute. For example, 
    add  `* * * * * /home/user_name/mastoquote/quote.sh 2>&1 | /usr/bin/logger -t MASTOSTATUS` in 
    `crontab -e`. The system and error log will be in `/var/log/syslog`. 
    Don't forgot the execution privilegies `chmod +x quote.sh`. 

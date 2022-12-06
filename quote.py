@@ -5,7 +5,7 @@ import random
 
 if __name__ == '__main__':
 
-    keyword = "quote"
+    keyword = "HAL"
 
     def replay_text ():
         

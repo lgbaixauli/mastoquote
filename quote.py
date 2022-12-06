@@ -29,7 +29,7 @@ class Runner:
         bot = Mastobot(self._config)
 
         notifications = bot.mastodon.notifications()
-
+       
         for notif in notifications:
             if notif.type == 'mention':
                 mention = bot.get_mention(notif, keyword)
@@ -39,11 +39,11 @@ class Runner:
                 self._logger.debug ("answersing with\n" + text_post)
 
                 if not self._config.get("testing.disable_push_answer"):
-                    self._logger.info("answering notification id" + notif.id)
+                    self._logger.info("answering notification id" + str(notif.id))
                     bot.replay(mention, text_post)
 
             if not self._config.get("testing.disable_dismis_notification"):
-                self._logger.info("dismissing notification id" + notif.id)
+                self._logger.info("dismissing notification id" + str(notif.id))
                 bot.mastodon.notifications_dismiss(notif.id)
 
         self._logger.info("end")

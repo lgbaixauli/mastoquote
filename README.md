@@ -24,13 +24,15 @@ Within Python Virtual Environment:
 
 2. Clone the repository `git clone https://github.com/lgbaixauli/mastoquote.git` 
 
-3. Run `pip install -r requirements.txt` to install needed libraries.  
+3. Crate a virtual environment `python3 -m venv .venv` and activate it `source .venv/bin/activate`
 
-4. Modify options in the `config.yaml` file. Fer exemple, the keyword or directories and files names.
+4. Run `pip install -r requirements.txt` to install needed libraries.  
 
-5. Run `python3 quote.py` manually once to bot setup and get its access token to Mastodon instance.
+5. Modify options in the `config.yaml` file. Fer exemple, the keyword or directories and files names.
 
-6. Use your favourite scheduling method to set `quote.sh` to run every minute. For example, 
+6. Run `python3 quote.py` manually once to bot setup and get its access token to Mastodon instance.
+
+7. Use your favourite scheduling method to set `quote.sh` to run every minute. For example, 
    add  `* * * * * /home/user_name/mastoquote/quote.sh 2>&1 | /usr/bin/logger -t MASTOSTATUS` in 
    `crontab -e`. The system and error log will be in `/var/log/syslog`. 
    Don't forgot the execution privilegies `chmod +x quote.sh`. 

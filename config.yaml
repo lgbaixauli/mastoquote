@@ -13,16 +13,28 @@ app:
 bot:
   # [String] Name of the app
   app_name: "quote"
-  # [Bool] Force log in
+  # [String]  Instance hostname 
+  hostname: "frikiverse.zone"
+  # [String] Access type: Access Token = "AT" | Credentials = "CR" 
+  access_type: "CR"
+
+# Mastobot access token configuration
+access_token:
+  # [String] client id
+  client_id: "AAAAAAAAAAAAAAAAAA"
+  # [String] Client secret
+  secret: "BBBBBBBBBBBBBBBBB"
+  # [String] Access token
+  token: "cccccccccc"
+
+# Mastobot credentials configuration
+credentials:
+  # [Bool] With credentials, force log in
   force_login: False
   # [String] Name of the secrets directory
   secrets_directory: "secrets"
   # [String] Name of the secrets file path
   secrets_file_path: "secrets.txt"
-  # [String] Name of the config directory
-  config_directory: "config"
-  # [String] Name of the config file path
-  config_file_path: "config.txt"
 
 # Testing options
 testing:
@@ -34,7 +46,7 @@ testing:
 # Logging config
 logger:
   # [Integer] Log level: NOTSET=0 | DEBUG=10 | INFO=20 | WARN=30 | ERROR=40 | CRITICAL=50
-  loglevel: 20
+  loglevel: 10
   # [String] Name of the logger
   name: "mastoquote_bot"
   # [Bool] Dump the log into a file

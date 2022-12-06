@@ -1,6 +1,4 @@
 **/__pycache__/
 secrets
-config
 log
-git+https://github.com/lgbaixauli/mastobot-bundle
 prova*

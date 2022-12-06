@@ -37,32 +37,23 @@ if __name__ == '__main__':
 
         return post_text
 
+    print(f"Starting bot with {keyword}")
+
     bot = Mastobot()
 
     notifications = bot.mastodon.notifications()
 
     for notif in notifications:
 
-        if notif.type != 'mention':
-
-            print(f"Dismissing notification id {notif.id}")
-
-            bot.mastodon.notifications_dismiss(notif.id)
-
-        else:
-
+        if notif.type == 'mention':
             mention = bot.get_mention(notif, keyword)
 
             if mention.reply:
-
                 print(f"Answersing notification id {notif.id}")
 
                 text_post = replay_text()
 
                 bot.replay(mention, text_post)
 
-            else:
-
-                print(f"Dismissing notification id {notif.id}")
-
-                bot.mastodon.notifications_dismiss(notif.id)
+        print(f"Dismissing notification id {notif.id}")
+        bot.mastodon.notifications_dismiss(notif.id)

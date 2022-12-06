@@ -134,8 +134,12 @@ class Mastobot:
 
         reply = False
 
+        print(f'Checking {keyword} with {len(keyword)}')
+
         content = self.cleanhtml(self, text)
         content = self.unescape(self, content)
+
+        print(f'changed content: {content}')
 
         try:
             start = content.index("@")
@@ -152,7 +156,7 @@ class Mastobot:
                 content = content[0: start:] + content[end +1::]
                 i += 1
 
-            content = content.lower()
+            # content = content.lower()
             question = content
 
             keyword_length = len(keyword)
@@ -187,11 +191,8 @@ class Mastobot:
 
         post_text = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
 
+        # print(f'Replied notification {mention.id} with {post_text}')
         self.mastodon.status_post(post_text, in_reply_to_id=mention.status_id,visibility=mention.visibility)
-
-        # print(f'Replied notification {mention.id}')
-        self.mastodon.notifications_dismiss(mention.id)
-
 
     @staticmethod
     def modify_file(self, file_name, pattern,value=""):
@@ -286,12 +287,12 @@ class Mastobot:
 
             if os.path.exists("app_clientcred.txt"):
 
-                print("Removing app_clientcred.txt temp file..")
+                print("Removing app_clientcred.txt temp file.")
                 os.remove("app_clientcred.txt")
 
             if os.path.exists("app_usercred.txt"):
 
-                print("Removing app_usercred.txt temp file..")
+                print("Removing app_usercred.txt temp file.")
                 os.remove("app_usercred.txt")
 
             config_filepath = 'config/config.txt'

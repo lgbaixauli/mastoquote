@@ -29,12 +29,12 @@ testing:
   # [Bool] Disable push the answer to Mastodon
   disable_push_answer: False
   # [Bool] Disable push the answer to Mastodon
-  disabe_dismis_notification: False
+  disable_dismis_notification: False
 
 # Logging config
 logger:
   # [Integer] Log level: NOTSET=0 | DEBUG=10 | INFO=20 | WARN=30 | ERROR=40 | CRITICAL=50
-  loglevel: 10
+  loglevel: 20
   # [String] Name of the logger
   name: "mastoquote_bot"
   # [Bool] Dump the log into a file

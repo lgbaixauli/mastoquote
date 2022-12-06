@@ -1,4 +1,5 @@
-# Info
+# Mastoquote
+
 This code publish quotes, if requested.  
 Based in the 'info' bot of @spla@mastodont.cat (https://git.mastodont.cat/spla/info)
 

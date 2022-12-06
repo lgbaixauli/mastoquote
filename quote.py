@@ -4,9 +4,9 @@
 # En https://git.mastodont.cat/spla/info
 ###  
 
-from scr.mastobot import Mastobot
-from scr.config import Config
-from scr.logger import Logger
+from bundle.mastobot import Mastobot
+from bundle.config import Config
+from bundle.logger import Logger
 import random
 
 class Runner:

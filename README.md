@@ -32,7 +32,7 @@ Within Python Virtual Environment:
 
 6. It's possible to fill in the config yaml the cliend id, cliend secret and access token of an application created in the Mastodon web (with de "development" opction). Also, it's possilbe to indicate credentials access and run `python3 quote.py` manually once to setup and get its access token to Mastodon instance.
 
-7. Use your favourite scheduling method to set `quote.sh` to run every minute. For example,  add  `* * * * * /home/user_name/mastoquote/quote.sh 2>&1 | /usr/bin/logger -t MASTOSTATUS` in `crontab -e`. The system and error log will be in `/var/log/syslog`. 
+7. Use your favourite scheduling method to set `quote.sh` to run every minute. For example,  add  `* * * * * /home/user_name/mastoquote/quote.sh 2>&1 | /usr/bin/logger -t MASTOQUOTE` in `crontab -e`. The system and error log will be in `/var/log/syslog`. 
 
    Don't forgot the execution privilegies `chmod +x quote.sh`. 
    Don't forgot update the user_name in `quote.sh`

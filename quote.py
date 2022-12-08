@@ -7,6 +7,8 @@
 from bundle.mastobot import Mastobot
 from bundle.config import Config
 from bundle.logger import Logger
+from bundle.translator import Translator
+
 import random
 
 class Runner:
@@ -14,41 +16,52 @@ class Runner:
     Main runner of the app
     '''
     def init(self):
-        self._config = Config()
-        self._logger = Logger(self._config).getLogger()
+        self._config     = Config()
+        self._logger     = Logger(self._config).getLogger()
+
         self._logger.info("init app")
+
+        self._translator = Translator("es")
+        self._bot        = Mastobot(self._config)
+        self._keyword    = self._config.get("app.keyword") 
 
         return self
 
     def run(self):
-        self._logger.info("run app")
-        
-        keyword = self._config.get("app.keyword")
-        self._logger.info ("starting bot with " + keyword)
 
-        bot = Mastobot(self._config)
+        self._logger.debug ("runing app with " + self._keyword)
 
-        notifications = bot.mastodon.notifications()
-       
+        notifications = self._bot.mastodon.notifications()
+
         for notif in notifications:
             if notif.type == 'mention':
-                mention = bot.get_mention(notif, keyword)
+                if self._bot.check_keyword_in_nofit(self._bot, notif, self._keyword):
+                    text_post = self.replay_text(notif.status.language)
+                    self._logger.debug ("answersing with\n" + text_post)
 
-            if mention.reply:
-                text_post = self.replay_text(keyword)
-                self._logger.debug ("answersing with\n" + text_post)
+                    if self._config.get("testing.disable_push_answer"):
+                        self._logger.info("push answer disabled")                    
+                    else:
+                        self._logger.info("answering notification id" + str(notif.id))
+                        self._bot.replay(notif, text_post)
 
-                if not self._config.get("testing.disable_push_answer"):
-                    self._logger.info("answering notification id" + str(notif.id))
-                    bot.replay(mention, text_post)
+            if self._config.get("testing.disable_dismis_notification"):
+                self._logger.debug("dismis notification disabled")                    
+            else:
+                self._logger.debug("dismissing notification id" + str(notif.id))
+                self._bot.mastodon.notifications_dismiss(notif.id)
 
-            if not self._config.get("testing.disable_dismis_notification"):
-                self._logger.info("dismissing notification id" + str(notif.id))
-                bot.mastodon.notifications_dismiss(notif.id)
 
-        self._logger.info("end")
+        self._logger.info("end app")
 
-    def replay_text(self, keyword):        
+
+    def replay_text(self, language):        
+
+        self._logger.debug("notif language: " + language)                    
+
+        self._translator.fix_language (language)
+        _text     = self._translator.get_text
+    
         quotes = [
             "I am the H.A.L 9000. You may call me Hal.",
             "I am completely operational, and all my circuits are functioning perfectly.", 
@@ -71,8 +84,8 @@ class Runner:
 
         aleatorio = random.choice(quotes)
 
-        post_text  = f", cita: '{aleatorio}' \n\n"
-        post_text += f"(Mencióname con la palabra '{keyword}' y te iluminaré con la sabiduría de HAL 9000)."
+        post_text  = ", " +_text("cita") + ": " + aleatorio + ":\n\n"
+        post_text += "(" + _text("mencion") + " " + self._keyword + " " + _text("respuesta") + ")"
         post_text = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
 
         self._logger.debug ("answer text\n" + post_text)

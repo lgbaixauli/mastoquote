@@ -42,6 +42,8 @@ credentials:
 # Testing options
 testing:
   # [Bool] Disable push the answer to Mastodon
+  activate_test_mode: False
+  # [Bool] Disable push the answer to Mastodon
   disable_push_answer: False
   # [Bool] Disable push the answer to Mastodon
   disable_dismis_notification: False

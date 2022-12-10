@@ -7,9 +7,9 @@ The bot listen to a keyword:
 
 @bot_username keyword
 
-and then reply with a quote.
+and then reply with a quote of HAL 9000 or Terry Pratchett.
 
-There are some config options in the config.yaml file
+You can configure diferent options in the config.yaml file (for exemple, the keywords). You can change the quotes in the quote.py file.
 
 ### Dependencies
 
@@ -28,7 +28,7 @@ Within Python Virtual Environment:
 
 4. Run `pip install -r requirements.txt` to install needed libraries.  
 
-5. Modify options in the `config.yaml` file. For exemple, the keyword the access type or directory and file names.
+5. Modify options in the `config.yaml` file. For exemple, the keywords or the access type to the Mastodon account.
 
 6. It's possible to fill in the config yaml the cliend id, cliend secret and access token of an application created in the Mastodon web (with de "development" opction). Also, it's possilbe to indicate credentials access and run `python3 quote.py` manually once to setup and get its access token to Mastodon instance.
 

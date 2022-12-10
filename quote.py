@@ -50,6 +50,8 @@ class Runner:
                             self._logger.info("answering notification id" + str(notif.id))
                             self._bot.replay(notif, text_post)
 
+            # TODO activate "test mode" in the nofif content "@bot_name keyword test"
+
             if self._config.get("testing.disable_dismis_notification"):
                 self._logger.debug("dismis notification disabled")                    
             else:

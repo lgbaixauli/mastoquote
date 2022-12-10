@@ -5,7 +5,7 @@ Based in the 'info' bot of @spla@mastodont.cat (https://git.mastodont.cat/spla/i
 
 The bot listen to a keyword:
 
-@bot_username keyword
+@bot_name keyword
 
 and then reply with a quote of HAL 9000 or Terry Pratchett.
 

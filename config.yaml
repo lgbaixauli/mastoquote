@@ -7,7 +7,7 @@ app:
   # [String] Name of the app
   name: "quote"
   # [String] Kewword to check
-  keyword: "HAL"
+  keyword: "HAL" , "Terry"
 
 # Mastobot config
 bot:

@@ -6,8 +6,8 @@
 app:
   # [String] Name of the app
   name: "quote"
-  # [String] quotes filename
-  quotes_file_name: "quotes.yaml" 
+  # [String] actions filename
+  actions_file_name: "actions.yaml" 
 
 # Mastobot config
 bot:

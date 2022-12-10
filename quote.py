@@ -33,11 +33,11 @@ class Runner:
 
     def init_app_options(self):
 
-        quotes_file_name = self._config.get("app.quotes_file_name") 
-        with open(quotes_file_name, 'r') as stream:
-            self._authors  = yaml.safe_load(stream)
+        actions_file_name = self._config.get("app.actions_file_name") 
+        with open(actions_file_name, 'r') as stream:
+            self._actions  = yaml.safe_load(stream)
         
-        self._logger.debug ("len authors: "   + str(len(self._authors)))
+        self._logger.debug ("len actions: "   + str(len(self._actions)))
         
 
     def init_test_options (self):
@@ -75,10 +75,10 @@ class Runner:
                     self._logger.info("ignoring test notification id" + str(notif.id))
                 else: 
 
-                    for author in self._authors:
+                    for action in self._actions:
 
-                        if self._bot.check_keyword_in_nofit(self._bot, notif, author["keyword"]):
-                            text_post = self.replay_text(notif.status.language, author)
+                        if self._bot.check_keyword_in_nofit(self._bot, notif, action["keyword"]):
+                            text_post = self.replay_text(notif.status.language, action)
 
                             if self._push_disable:
                                 self._logger.info("pushing answer disabled notification id" + str(notif.id))                     
@@ -93,11 +93,11 @@ class Runner:
         self._logger.info("end app")
 
 
-    def replay_text(self, language, author):        
+    def replay_text(self, language, action):        
 
-        name    = author["name"]
-        keyword = author["keyword"]
-        quotes  = author["quotes"]
+        name    = action["name"]
+        keyword = action["keyword"]
+        quotes  = action["quotes"]
 
         self._logger.debug("notif language: " + language)                    
         self._logger.debug("notif name    : " + name)                    

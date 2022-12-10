@@ -6,8 +6,8 @@
 app:
   # [String] Name of the app
   name: "quote"
-  # [String] Kewword to check
-  keyword: "HAL"
+  # [String] quotes filename
+  quotes_file_name: "quotes.yaml" 
 
 # Mastobot config
 bot:
@@ -34,14 +34,18 @@ credentials:
   # [String] Name of the secrets directory
   secrets_directory: "secrets"
   # [String] Name of the secrets file path
-  secrets_file_path: "secrets.txt"
+  secrets_file_name: "secrets.txt"
 
 # Testing options
 testing:
+  # [String] Test word in toot
+  text_word: "test"
+  # [Bool] Disable push the answer to Mastodon
+  ignore_test_toot: True
   # [Bool] Disable push the answer to Mastodon
   disable_push_answer: False
   # [Bool] Disable push the answer to Mastodon
-  disable_dismis_notification: False
+  disable_dismiss_notification: False
 
 # Logging config
 logger:
@@ -50,7 +54,7 @@ logger:
   # [String] Name of the logger
   name: "mastoquote_bot"
   # [Bool] Dump the log into a file
-  to_file: False
+  to_file: True
   # [String] Directory of the logger
   directory: "log"
   # [String] Filename of the log file

@@ -1,5 +1,5 @@
 #######################################
-#    Locale for mastodon status bot   #
+#    Locale for mastodon quotes bot   #
 #######################################
 
 cita:
@@ -15,8 +15,8 @@ mencion:
   gl: "Mencióname coa palabra"
 
 respuesta:
-  es: "y te iluminaré con la sabiduría de HAL 9000"
-  ca: "i t'il·luminaré amb la saviesa de HAL 9000"
-  en: "and I will enlighten you with the wisdom of HAL 9000"  
-  gl: "e iluminareiche coa sabedoría de HAL 9000"
+  es: "y te iluminaré con la sabiduría de"
+  ca: "i t'il·luminaré amb la saviesa de"
+  en: "and I will enlighten you with the wisdom of"  
+  gl: "e iluminareiche coa sabedoría de"
 

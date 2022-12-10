@@ -7,7 +7,10 @@ app:
   # [String] Name of the app
   name: "quote"
   # [String] Kewword to check
-  keyword: "HAL" , "Terry"
+  keywords: [
+    "HAL" , 
+    "Terry"
+  ]
 
 # Mastobot config
 bot:
@@ -16,7 +19,7 @@ bot:
   # [String]  Instance hostname 
   hostname: "frikiverse.zone"
   # [String] Access type: Access Token = "AT" | Credentials = "CR" 
-  access_type: "AT"
+  access_type: "CR"
 
 # Mastobot access token configuration
 access_token:
@@ -46,7 +49,7 @@ testing:
 # Logging config
 logger:
   # [Integer] Log level: NOTSET=0 | DEBUG=10 | INFO=20 | WARN=30 | ERROR=40 | CRITICAL=50
-  loglevel: 20
+  loglevel: 10
   # [String] Name of the logger
   name: "mastoquote_bot"
   # [Bool] Dump the log into a file

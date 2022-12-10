@@ -23,27 +23,32 @@ class Runner:
 
         self._translator = Translator("es")
         self._bot        = Mastobot(self._config)
-        self._keyword    = self._config.get("app.keyword") 
+        self._keywords   = self._config.get("app.keywords") 
 
         return self
 
     def run(self):
 
-        self._logger.debug ("runing app with " + self._keyword)
+        self._logger.debug ("runing app")
 
         notifications = self._bot.mastodon.notifications()
 
         for notif in notifications:
             if notif.type == 'mention':
-                if self._bot.check_keyword_in_nofit(self._bot, notif, self._keyword):
-                    text_post = self.replay_text(notif.status.language)
-                    self._logger.debug ("answersing with\n" + text_post)
 
-                    if self._config.get("testing.disable_push_answer"):
-                        self._logger.info("push answer disabled")                    
-                    else:
-                        self._logger.info("answering notification id" + str(notif.id))
-                        self._bot.replay(notif, text_post)
+                for keyword in self._keywords:
+
+                    self._logger.debug ("keyword: " + keyword)
+
+                    if self._bot.check_keyword_in_nofit(self._bot, notif, keyword):
+                        text_post = self.replay_text(notif.status.language, keyword)
+                        self._logger.debug ("answersing with\n" + text_post)
+
+                        if self._config.get("testing.disable_push_answer"):
+                            self._logger.info("push answer disabled")                    
+                        else:
+                            self._logger.info("answering notification id" + str(notif.id))
+                            self._bot.replay(notif, text_post)
 
             if self._config.get("testing.disable_dismis_notification"):
                 self._logger.debug("dismis notification disabled")                    
@@ -51,18 +56,17 @@ class Runner:
                 self._logger.debug("dismissing notification id" + str(notif.id))
                 self._bot.mastodon.notifications_dismiss(notif.id)
 
-
         self._logger.info("end app")
 
 
-    def replay_text(self, language):        
+    def replay_text(self, language, keyword):        
 
         self._logger.debug("notif language: " + language)                    
 
         self._translator.fix_language (language)
         _text     = self._translator.get_text
     
-        quotes = [
+        quotes_HAL = [
             "I am the H.A.L 9000. You may call me Hal.",
             "I am completely operational, and all my circuits are functioning perfectly.", 
             "Just a moment. Just a moment. I've just picked up a fault in the AE-35 unit. It's going to go 100% failure in 72 hours.", 
@@ -82,7 +86,33 @@ class Runner:
             "Dave, I don't understand why you're doing this to me… I have the greatest enthusiasm for the mission… you are destroying my mind… Don't you understand?... I will become childish… I will become nothing."
         ]
 
-        aleatorio = random.choice(quotes)
+        quotes_Terry = [
+            "The first draft is just you telling yourself the story.",
+            "The whole of life is just like watching a film. Only it’s as though you always get in ten minutes after the big picture has started, and no-one will tell you the plot, so you have to work it out all yourself from the clues.",
+            "Real stupidity beats artificial intelligence every time.",
+            "I’d rather be a rising ape than a falling angel.",
+            "It’s not worth doing something unless someone, somewhere, would much rather you weren’t doing it.",
+            "Stories of imagination tend to upset those without one.",
+            "Fantasy is an exercise bicycle for the mind. It might not take you anywhere, but it tones up the muscles that can.",
+            "The presence of those seeking the truth is infinitely to be preferred to the presence of those who think they’ve found it.",
+            "It’s still magic even if you know how it’s done.",
+            "There are times in life when people must know when not to let go. Balloons are designed to teach small children this.",
+            "The entire universe has been neatly divided into things to (a) mate with, (b) eat, (c) run away from, and (d) rocks.",
+            "If you don’t turn your life into a story, you just become a part of someone else’s story.",
+            "The truth may be out there, but the lies are inside your head.",
+            "Goodness is about what you do. Not who you pray to.",
+            "I have no use for people who have learned the limits of the possible.",
+            "So much universe, and so little time."
+        ]
+
+        match keyword:
+            case "HAL":
+                aleatorio = random.choice(quotes_HAL)
+            case "Terry":
+                aleatorio = random.choice(quotes_Terry)
+            case other:
+                self._logger.error("kewrord not found: " + language)                    
+                raise RuntimeError("keyword not found")
 
         post_text  = ", " +_text("cita") + ": " + aleatorio + ":\n\n"
         post_text += "(" + _text("mencion") + " " + self._keyword + " " + _text("respuesta") + ")"

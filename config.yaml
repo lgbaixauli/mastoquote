@@ -54,7 +54,7 @@ logger:
   # [String] Name of the logger
   name: "mastoquote_bot"
   # [Bool] Dump the log into a file
-  to_file: True
+  to_file: False
   # [String] Directory of the logger
   directory: "log"
   # [String] Filename of the log file

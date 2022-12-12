@@ -62,7 +62,7 @@ class Bot(Mastobot):
                         action = self._actions[key]
 
                         if self.check_keyword_in_nofit(notif, action["keyword"]):
-                            text_post = self.find_text(notif.status.language, action)
+                            text_post = self.find_text(notif.status.language, action["name"], action["keyword"], action["quotes"])
 
                             if self._push_disable:
                                 self._logger.info("pushing answer disabled notification id" + str(notif.id))                     
@@ -77,11 +77,7 @@ class Bot(Mastobot):
         super().run(botname = botname)
 
 
-    def find_text(self, language, action):        
-
-        name    = action["name"]
-        keyword = action["keyword"]
-        quotes  = action["quotes"]
+    def find_text(self, language, name, keyword, quotes):        
 
         self._logger.debug("notif language: " + language)                    
         self._logger.debug("notif name    : " + name)                    
@@ -97,17 +93,18 @@ class Bot(Mastobot):
 
         if "comments" in quote:
             if quote["comments"] != "":
-                post_text = post_text + " " + quote["comments"] + "\n"
+                post_text = post_text + quote["comments"] + "\n"
 
         if "source" in quote:
             if quote["source"] != "":
-                post_text = post_text + " " + quote["source"] + "\n"
+                post_text = post_text + quote["source"] + "\n"
 
         post_text += "\n"
         post_text += "(" + _text("mencion") + " " + keyword + " " + _text("respuesta") + " " + name + ")"
         post_text  = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
 
         self._logger.debug ("answering text\n" + post_text)
+
         return post_text
 
 

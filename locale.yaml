@@ -3,10 +3,10 @@
 #######################################
 
 cita:
-  es: "cita"
-  ca: "cita"
+  es: "quote"
+  ca: "quote"
   en: "quote"
-  gl: "cita"  
+  gl: "quote"  
 
 mencion:
   es: "Mencióname con la palabra"

@@ -50,11 +50,11 @@ class Bot(Mastobot):
 
                 if self._dismiss_disable:
                     dismiss = False
-                    self._logger.debug("dismissing disabled notification id" + str(notif.id))                    
+                    self._logger.debug("dismissing disabled notification id " + str(notif.id))                    
     
                 if self._ignore_test and self.check_keyword_in_nofit(notif, self._test_word):
                     dismiss = False
-                    self._logger.info("ignoring test notification id" + str(notif.id))
+                    self._logger.info("ignoring test notification id " + str(notif.id))
                 else: 
 
                     for key in self._actions:
@@ -65,13 +65,13 @@ class Bot(Mastobot):
                             text_post = self.find_text(notif.status.language, action["name"], action["keyword"], action["quotes"])
 
                             if self._push_disable:
-                                self._logger.info("pushing answer disabled notification id" + str(notif.id))                     
+                                self._logger.info("pushing answer disabled notification id " + str(notif.id))                     
                             else:
-                                self._logger.info("answering notification id" + str(notif.id))
+                                self._logger.info("answering notification id " + str(notif.id))
                                 self.replay(notif, text_post)
 
             if dismiss:
-                self._logger.debug("dismissing notification id" + str(notif.id))
+                self._logger.debug("dismissing notification id " + str(notif.id))
                 self.mastodon.notifications_dismiss(notif.id)
 
         super().run(botname = botname)

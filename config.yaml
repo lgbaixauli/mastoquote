@@ -16,7 +16,7 @@ bot:
   # [String]  Instance hostname 
   hostname: "frikiverse.zone"
   # [String] Access type: Access Token = "AT" | Credentials = "CR" 
-  access_type: "CR"
+  access_type: "AT"
 
 # Mastobot access token configuration
 access_token:
@@ -41,16 +41,16 @@ testing:
   # [String] Test word in toot
   text_word: "test"
   # [Bool] Disable push the answer to Mastodon
-  ignore_test_toot: False
+  ignore_test_toot: True
   # [Bool] Disable push the answer to Mastodon
-  disable_push: True
+  disable_post: False
   # [Bool] Disable push the answer to Mastodon
-  disable_dismiss: True
+  disable_dismiss: False
 
 # Logging config
 logger:
   # [Integer] Log level: NOTSET=0 | DEBUG=10 | INFO=20 | WARN=30 | ERROR=40 | CRITICAL=50
-  loglevel: 10
+  loglevel: 20
   # [String] Name of the logger
   name: "mastoquote_bot"
   # [Bool] Dump the log into a file

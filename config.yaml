@@ -21,11 +21,11 @@ bot:
 # Mastobot access token configuration
 access_token:
   # [String] client id
-  client_id: ""
+  client_id: "aaa"
   # [String] Client secret
-  secret: ""
+  secret: "bbb"
   # [String] Access token
-  token: ""
+  token: "ccc"
 
 # Mastobot credentials configuration
 credentials:

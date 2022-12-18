@@ -74,7 +74,7 @@ class Bot(Mastobot):
                 post_text = post_text + quote["source"] + "\n"
 
         post_text += "\n"
-        post_text += "(" + _text("mencion") + " " + keyword + " " + _text("respuesta") + " " + name + ")"
+        post_text += "(" + _text("mencion") + " \"" + keyword + "\" " + _text("respuesta") + " " + name + ")"
         post_text  = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
 
         self._logger.debug ("answering text\n" + post_text)

@@ -2,12 +2,6 @@
 #    Locale for mastodon quotes bot   #
 #######################################
 
-cita:
-  es: "quote"
-  ca: "quote"
-  en: "quote"
-  gl: "quote"  
-
 mencion:
   es: "Mencióname con la palabra"
   ca: "Esmenta'm amb la paraula"

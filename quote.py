@@ -63,7 +63,7 @@ class Bot(Mastobot):
     
         self._logger.debug ("quote id: " + str(quote["id"]))
 
-        post_text  = "@" + username + ", " +_text("cita") + ": \n\n" + quote["text"] + "\n"
+        post_text  = "@" + username + ":\n\n" + quote["text"] + "\n"
 
         if "comments" in quote:
             if quote["comments"] != "":

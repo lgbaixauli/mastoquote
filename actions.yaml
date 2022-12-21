@@ -99,11 +99,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, alt.fan.pratchett"
         -
-            id: 8
-            text: "There should be a notice ahead of the movie that says 'This movie is PG.  Can you read?  You are a Parent.  Do you understand what Guidance is?  Or are you just another stupid toddler who thinks they're an adult simple because they've grown older and, unfortunately, have developed fully-functioning sexual organs?  Would you like some committee somewhere to decide *everything* for you?  Get a damn grip, will you?  And shut the wretched kid up !'"
-            comments: ""
-            source: "Terry Pratchett, alt.fan.pratchett"
-        -
             id: 9
             text: "The difference between me and Neil in our attitude to movie projects is that he doesn't believe they're going to happen until he's sitting in his seat eating popcorn, and I don't believe they're going to happen."
             comments: ""
@@ -169,11 +164,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, alt.fan.pratchett"
         -
-            id: 22
-            text: "In Reading [England] there is this thing called the IDR, short for \"Inner Distribution Road\", which is bureaucratese for \"Big thing that cost a lot of money and relieves traffic problems, provided all your traffic wants to orbit the town centre permanently\". It's a 2-3 lane dual carriageway that goes round the town centre. It has lots of roundabouts, an overhead section, a couple of spare motorway-like exits (that's British motorways -- y'know, the roundabout with the main road going under it), and a thing called the Watlington Street Gyratory, where you have to get in lane for your intended destination about three years and two corners before you get there *with no signposting*. I used to cycle along it every day to get to school, before I fell off at 35 mph. [Kids! Don't try this at home!]  I know it well. I believe it is impossible to leave Reading heading west."
-            comments: ""
-            source: "Terry Pratchett, alt.fan.pratchett"
-        -
             id: 23
             text: "I didn't go to university. Didn't even finish A-levels. But I have sympathy for those who did."
             comments: ""
@@ -214,11 +204,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, alt.fan.pratchett"
         -
-            id: 31
-            text: "Well, they asked me in February, and I said it was coming out in November. When they asked in March, I said it was coming out in November. In April I pointed out that November, in fact, was going to be when the next book came out. In May, when asked on many occasions about when Maskerade was coming out, I said November. In November, it will be published. The same November all the way through, too."
-            comments: "So Terry, when is 'Maskerade' coming out, then?"
-            source: "Terry Pratchett, alt.fan.pratchett"
-        -
             id: 32
             text: "Bognor has always meant to me the quintessential English seaside experience (before all this global warming stuff): driving in the rain to get there, walking around in the rain looking for something to do when you're there, and driving home in the rain again..."
             comments: ""
@@ -226,11 +211,6 @@ Quote_Terry:
         -
             id: 33
             text: "Over the centuries, mankind has tried many ways of combating the forces of evil...prayer, fasting, good works and so on. Up until Doom, no one seemed to have thought about the double-barrel shotgun. Eat leaden death, demon..."
-            comments: ""
-            source: "Terry Pratchett, alt.fan.pratchett"
-        -
-            id: 34
-            text: "You can't make people happy by law. If you said to a bunch of average people two hundred years ago \"Would you be happy in a world where medical care is widely available, houses are clean, the world's music and sights and foods can be brought into your home at small cost, travelling even 100 miles is easy, childbirth is generally not fatal to mother or child, you don't have to die of dental abcesses and you don't have to do what the squire tells you\" they'd think you were talking about the New Jerusalem and say 'yes'."
             comments: ""
             source: "Terry Pratchett, alt.fan.pratchett"
         -
@@ -264,11 +244,6 @@ Quote_Terry:
             comments: "Terry defending his solution to the Monty Hall problem."
             source: "Terry Pratchett, alt.fan.pratchett"
         -
-            id: 41
-            text: "Currently there's five machines permanently networked here. They *all* contain the serious core stuff. A couple of the machines are pensioned off 486s, with little other value now. Plus there's two Jaz drives in the building and the portable also carries a fair amount of stuff. Plus every Friday a man comes around and carves all the new stuff onto stone slabs and buries them in the garden... I think I'm okay."
-            comments: ""
-            source: "Terry Pratchett, alt.fan.pratchett"
-        -
             id: 42
             text: "I think I would like to go into modelling. Of course, I don't know how to do it, and wouldn't be any good at it if I did, so I'm going to employ someone to walk the catwalks on my behalf. It would still be *me*, of course..."
             comments: "Terry learns Naomi Campbell has written a book."
@@ -289,6 +264,7 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, alt.fan.pratchett"
         -
+            id: 46
             text: "The net software here did its meltdown trick again at the weekend (it happens about once every six months -- if only everything was as reliable as WordPerfect 4.2, which only chews up a novel about once every two or three years...)"
             comments: ""
             source: "Terry Pratchett, alt.fan.pratchett"
@@ -533,18 +509,8 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Carpe Jugulum"
         -
-            id: 95
-            text: "Hodgesaargh was an original storyteller and quite good in a very specific way. If he'd had to recount the saga of the Tsortean War, for example, it would have been in terms of the birds observed, every cormorant noted, every pelican listed, every battlefield raven taxonomically placed, no tern unturned. Some men in armour would have been involved at some stage, but only because the ravens were perching on them."
-            comments: ""
-            source: "Terry Pratchett, Carpe Jugulum"
-        -
             id: 96
             text: "Fewer birds could sit more meekly than the Lancre wowhawk, or lappet-faced worrier, a carnivore permanently on the lookout for the vegetarian option."
-            comments: ""
-            source: "Terry Pratchett, Carpe Jugulum"
-        -
-            id: 97
-            text: "He was trying to find some help in the ancient military journals of General Tacticus, whose intelligent campaigning had been so successful that he'd lent his very name to the detailed prosecution of martial endeavour, and had actually found a section headed What to Do If One Army Occupies a Well-fortified and Superior Ground and the Other Does Not, but since the first sentence read \"Endeavour to be the one inside\" he'd rather lost heart."
             comments: ""
             source: "Terry Pratchett, Carpe Jugulum"
         -
@@ -595,8 +561,8 @@ Quote_Terry:
         -
             id: 107
             text: "\"While I'm still confused and uncertain, it's on a much higher plane, d'you see, and at least I know I'm bewildered about the really fundamental and important facts of the universe.\" Treatle nodded. \"I hadn't looked at it like that,\" he said, \"But you're absolutely right. He's really pushed back the boundaries of ignorance.\""
-            comments: "Discworld scientists at work"
-            source: "Terry Pratchett, Equal Rites"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 108
             text: "They both savoured the strange warm glow of being much more ignorant than ordinary people, who were only ignorant of ordinary things."
@@ -617,11 +583,6 @@ Quote_Terry:
             text: "For animals, the entire universe has been neatly divided into things to (a) mate with, (b) eat, (c) run away from, and (d) rocks."
             comments: ""
             source: "Terry Pratchett, Equal Rites"
-        -
-            id: 112
-            text: "No enemies had ever taken Ankh-Morpock. Well *technically* they had, quite often; the city welcomed free-spending barbarian invaders, but somehow the puzzled raiders found, after a few days, that they didn't own their horses any more, and within a couple of months they were just another minority group with its own graffiti and food shops."
-            comments: ""
-            source: "Terry Pratchett, Eric"
         -
             id: 113
             text: "Old Tom was the single cracked bronze bell in the University bell tower. The clapper dropped out shortly after it was cast, but the bell still tolled out some tremendously sonorous silences every hour."
@@ -729,11 +690,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Feet of Clay"
         -
-            id: 134
-            text: "...He hated the very idea of the world being divided into the shaved and the shavers. Or those who wore the shiny boots and those who cleaned the mud off them. Every time he saw Willikins the butler fold his, Vimes's, clothes, he suppressed a terrible urge to kick the butler's shiny backside as an affront to the dignity of man."
-            comments: ""
-            source: "Terry Pratchett, Feet of Clay"
-        -
             id: 135
             text: "I AM DEATH, NOT TAXES. *I* TURN UP ONLY ONCE."
             comments: ""
@@ -759,11 +715,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Feet of Clay"
         -
-            id: 140
-            text: "You never ever volunteered. Not even if a sergant stood there and said, \"We need someone to drink alcohol, bottles of, and make love, passionate, to women, for the use of.\" There was *always* a snag. If a choir of angels asked for volunteers for Paradise to step forward, Nobby knew enough to take one smart pace to the rear."
-            comments: ""
-            source: "Terry Pratchett, Feet of Clay"
-        -
             id: 141
             text: "\"Today Is A Good Day For Someone Else To Die!\""
             comments: ""
@@ -777,11 +728,6 @@ Quote_Terry:
             id: 143
             text: "In all, I've had seventeen demands for your badge. Some want parts of your body attached. Why did you have to upset everybody?"
             comments: "Lord Vetinari reproves Vimes."
-            source: "Terry Pratchett, Feet of Clay"
-        -
-            id: 144
-            text: "It was Carrot who'd suggested to the Patrician that hardened criminals should be given the chance to \"serve the community\" by redecorating the homes of the elderly, lending a new terror to old age and, given Ankh-Morpork's crime rate, leading to at least one old lady having her front room wallpapered so many times in six months that now she could only get in sideways."
-            comments: ""
             source: "Terry Pratchett, Feet of Clay"
         -
             id: 145
@@ -859,11 +805,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett & Neil Gaiman, Good Omens"
         -
-            id: 160
-            text: "English Burger Lords managed to take any American fast food virtues (the speed with which your food was delivered, for example) and carefully remove them; your food arrived after half an hour, at room temperature, and it was only because of the strip of warm lettuce between them that you could distinguish the burger from the bun. The Burger Lord pathfinder salesmen had been shot 25 minutes after setting foot in France."
-            comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
             id: 161
             text: "Shadwell hated all southerners and, by inference, was standing at the North Pole."
             comments: ""
@@ -904,11 +845,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett & Neil Gaiman, Good Omens"
         -
-            id: 169
-            text: "    \"Jesus won't cut you off before you're through     With him you won't never get a crossed line,     And when your bill comes it'll all be properly itemised     He's the telephone repairman on the switchboard of my life.\n    The phone line to the saviour's always free of interference     He's in at any hour, day or night     And when you call J-E-S-U-S you always call toll-free     He's the telephone repairman on the switchboard of my life.\"\n"
-            comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
             id: 170
             text: "- \"ALL YOU CAN HOPE FOR IS THE MERCY OF HELL.\"\n- \"Yeah?\"\n- \"JUST OUR LITTLE JOKE.\"\n- \"Ngk,\" said Crowley."
             comments: "Crowley in conversation with his superiors"
@@ -929,11 +865,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett & Neil Gaiman, Good Omens"
         -
-            id: 174
-            text: "Along with the standard computer warranty agreement which said that if the machine 1) didn't work, 2) didn't do what the expensive advertisement said, 3) electrocuted the immediate neighbourhood, 4) and in fact failed entirely to be inside the expensive box when you opened it, this was expressly, absolutely, implicitly and in no event the fault or responsibility of the manufacturer, that the purchaser should consider himself lucky to be allowed to give his money to the manufacturer, and that any attempt to treat what had just been paid for as the purchaser's own property would result in the attentions of serious men with menacing briefcases and very thin watches."
-            comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
             id: 175
             text: "Crowley had been extremely impressed with the warranties offered by the computer industry, and had in fact sent a bundle Below to the department that drew up the Immortal Soul agreements, with a yellow memo form attached just saying: \"Learn, guys.\""
             comments: "Crowley is a demon, in case you don't know"
@@ -946,8 +877,8 @@ Quote_Terry:
         -
             id: 177
             text: "\"This isn't how I imagined it, chaps,\" said War. \"I haven't been waiting for thousands of years just to fiddle around with bits of wire.  It's not what you'd call *dramatic*. Albrecht Duerer didn't waste his time doing woodcuts of the Four Button-Pressers of the Apocalypse, I do know that.\""
-            comments: "Armageddon delayed by technical difficulties"
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 178
             text: "\"I don't see why it matters what is written. Not when it's about people. It can always be crossed out.\""
@@ -979,16 +910,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett & Neil Gaiman, Good Omens"
         -
-            id: 184
-            text: "God does not play dice with the universe: He plays an ineffable game of His own devising, which might be compared, from the perspective of any of the other players [i.e. everybody], to being involved in an obscure and complex variant of poker in a pitch-dark room, with blank cards, for infinite stakes, with a Dealer who won't tell you the rules, and who *smiles all the time*."
-            comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
-            id: 185
-            text: "It wasn't a dark and stormy night. It should have been, but there's the weather for you. For every mad scientist who's had a convenient thunderstorm just on the night his Great Work is complete and lying on the slab, there have been dozens who've sat around aimlessly under the peaceful stars while Igor clocks up the overtime."
-            comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
             id: 186
             text: "Many phenomena - wars, plagues, sudden audits - have been advanced as evidence for the hidden hand of Satan in the affairs of Man, but whenever students of demonology get together the M25 London orbital motorway is generally agreed to be among the top contenders for exhibit A."
             comments: ""
@@ -996,27 +917,17 @@ Quote_Terry:
         -
             id: 187
             text: "Sister Mary headed through the night-time hospital with the Adversary, Destroyer of Kings, Angel of the Bottomless Pit, Great Beast that is called Dragon, Prince of This World, Father of Lies, Spawn of Satan and Lord of Darkness safely in her arms. She found a bassinet and laid him down in it. He gurgled. She gave him a tickle."
-            comments: "The antichrist is born"
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 188
             text: "Mr Young hadn't had to quiet a screaming baby for years. He'd never been much good at it to start with. He'd always respected Sir Winston Churchill, and patting small versions of him on the bottom had always seemed ungracious."
             comments: ""
             source: "Terry Pratchett & Neil Gaiman, Good Omens"
         -
-            id: 189
-            text: "The ducks in St James's Park are so used to being fed bread by secret agents meeting clandestinely that they have developed their own Pavlovian reaction. Put a St James's Park duck in a laboratory cage and show it a picture of two men -- one usually wearing a coat with a fur collar, the other something sombre with a scarf -- and it'll look up expectantly."
-            comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
             id: 190
             text: "A man threw himself through the window, a knife between his teeth, a Kalashnikov automatic rifle in one hand, a grenade in the other. \"I glaim gis oteg in der gaing og der --\" he paused. He tooke the knife out of his teeth and began again."
             comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
-            id: 191
-            text: "- \"Surely you have considered terrorist activity?\" There was another pause. Then the spokesman said, in the quiet tones of someone who has had enough and who is going to quit after this and raise chickens somewhere, \"Yes, I suppose we must. All we need to do is find some terrorists who are capable of taking an entire nuclear reactor out of its can while it's running and without anyone noticing. It weighs about a thousand tons and is forty feet high. So they'll be quite *strong* terrorists. Perhaps you'd like to ring them up, sir, and ask them questions in that supercilious, accusatory way of yours.\""
-            comments: "The BBC interviews a nuclear spokesperson"
             source: "Terry Pratchett & Neil Gaiman, Good Omens"
         -
             id: 192
@@ -1026,13 +937,8 @@ Quote_Terry:
         -
             id: 193
             text: "... walking like a man carrying a thermos flask of something that might cause, if he dropped it or even thought about dropping it, the sort of explosion that impels grey-beards to make statements like \"And where this crater is now, once stood the city of Wah-Shing-Ton\", in SF B-movies."
-            comments: "Crowley gets out the Holy Water"
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
-        -
-            id: 194
-            text: "She'd stopped reading the kind of women's magazine that talked about romance and knitting and started reading the kind of women's magazine that talked about orgasms, but apart from making a mental note to have one if ever the occasion presented itself she dismissed them as only romance and knitting in a new form."
-            comments: ""
-            source: "Terry Pratchett & Neil Gaiman, Good Omens"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 195
             text: "\"[...] a number of offences of murder by means of a blunt instrument, to whit, a dragon, and many further offences of generalized abetting [...]\""
@@ -1154,11 +1060,6 @@ Quote_Terry:
             comments: "Death makes a career move"
             source: "Terry Pratchett, Hogfather"
         -
-            id: 219
-            text: "This is very similar to the suggestion put forward by the Quirmian philosopher Ventre, who said, \"Possibly the gods exist, and possibly they do not. So why not believe in them in any case? If it's all true you'll go to a lovely place when you die, and if it isn't then you've lost nothing, right?\" When he died he woke up in a circle of gods holding nasty-looking sticks and one of them said, \"We're going to show you what we think of Mr Clever Dick in these parts...\""
-            comments: ""
-            source: "Terry Pratchett, Hogfather"
-        -
             id: 220
             text: "Biers was where the undead drank. And when Igor the barman was asked for a Bloody Mary, he didn't mix a metaphor."
             comments: ""
@@ -1192,11 +1093,6 @@ Quote_Terry:
             id: 226
             text: "We took pity on him because he'd lost both parents at an early age. I think that, on reflection, we should have wondered a bit more about that."
             comments: "Lord Downey reflects on Mister Teatime"
-            source: "Terry Pratchett, Hogfather"
-        -
-            id: 227
-            text: "It's a sad and terrible thing that high-born folk really have thought that the servants would be totally fooled if spirits were put into decanters that were cunningly labelled *backwards*. And also throughout history the more politically conscious butler has taken it on trust, and with rather more justification, that his employers will not notice if the whisky is topped up with eniru."
-            comments: ""
             source: "Terry Pratchett, Hogfather"
         -
             id: 228
@@ -1314,18 +1210,8 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Jingo"
         -
-            id: 251
-            text: "It was so much easier to blame it on Them. It was bleakly depressing to think that They were Us. If it was Them, then nothing was anyone's fault. If it was us, what did that make Me? After all, I'm one of Us. I must be. I've certainly never thought of myself as one of Them. *No one* ever thinks of themselves as one of Them. We're always one of Us. It's Them that do the bad things."
-            comments: ""
-            source: "Terry Pratchett, Jingo"
-        -
             id: 252
             text: "Bigmac wasn't an athlete. If there was an Olympic Sick Note event, he would've won the 100 metres I've Got Asthma, the half marathon Lurk in the Changing Rooms, and the freestyle Got to Go to the Doctor."
-            comments: ""
-            source: "Terry Pratchett, Johnny and the Bomb"
-        -
-            id: 253
-            text: "\"Is that *you*?\" said a female voice. It wasn't exactly an unpleasant one, but it had a sharp penetrating quality. It seemed to be saying that if you *weren't* you, then it was *your* fault. Johnny recognized it instantly. It was the voice of someone who dialled the wrong numbers and then complained that the phone was answered by people she didn't want to speak to."
             comments: ""
             source: "Terry Pratchett, Johnny and the Bomb"
         -
@@ -1359,11 +1245,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Johnny and the Dead"
         -
-            id: 260
-            text: "The figures the telescope was producing were all that was left of an exploding star twenty million years ago. A billion small rubbery things on two planets who had been getting on with life in a quiet sort of way had been totally destroyed, but they were certainly helping Adrian get his Ph.D. and, who knows, they might have thought it all worthwhile if anyone had asked them."
-            comments: ""
-            source: "Terry Pratchett, Johnny and the Dead"
-        -
             id: 261
             text: "\"I believe it's very hard to have fun in Iceland without fish being involved in some way.\""
             comments: "Looking for a good place to party"
@@ -1371,8 +1252,8 @@ Quote_Terry:
         -
             id: 262
             text: "- \"America?\" said Mrs Liberty. \"Won't we get scalped?\"\n- \"Good grief, no!\" said William Stickers, who was a bit more up to date    about the world.\n- \"*Probably* not,\" said Mr Fletcher, who had been watching the news lately    and was even more up to date than William Stickers."
-            comments: "Still looking for a good place to party"
-            source: "Terry Pratchett, Johnny and the Dead"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 263
             text: "Sergeant Comely was working on the general assumption that where you got lots of people gathered together, something illegal was bound to happen sooner or later."
@@ -1515,11 +1396,6 @@ Quote_Terry:
 "
             source: "Terry Pratchett, Lords and Ladies"
         -
-            id: 291
-            text: "There have, in the course of decadent history, been many large wigs, often with build-in gewgaws to stop people having to look at boring hair all the time. There had been ones big enough to contain pet mice or clockwork ornaments. Mme Cupidor, mistress of Mad King Soup II, had one with a bird cage in it, but on special state occasions wore one containing a perpetual calendar, a floral clock and a take-away linguini shop."
-            comments: ""
-            source: "Terry Pratchett, Lords and Ladies"
-        -
             id: 292
             text: "The place looked as though it had been visited by Gengiz Cohen [footnote: hence the term \"wholesale destruction\"]."
             comments: ""
@@ -1545,11 +1421,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Lords and Ladies"
         -
-            id: 297
-            text: "It was here that the thaum, hitherto believed to be the smallest possible particle of magic, was succesfully demonstrated to be made up of /resons/ (Lit.: 'Thing-ies') or reality fragments. Currently research indicates that each reson is itself made up of a combination of at least five 'flavours', known as 'up', 'down', 'sideways', 'sex appeal' and 'peppermint'."
-            comments: ""
-            source: "Terry Pratchett, Lords and Ladies"
-        -
             id: 298
             text: "A heap of discarded garments by the bed suggested that Verence had mastered the art of hanging up clothes as practised by half the population of the world, and that he had equally had difficulty with the complex topological manoeuvres necessary to turn the socks the right way out."
             comments: ""
@@ -1562,11 +1433,6 @@ Quote_Terry:
         -
             id: 300
             text: "It's not enough to be able to pick up a sword. You have to know which end to poke into the enemy."
-            comments: ""
-            source: "Terry Pratchett, Lords and Ladies"
-        -
-            id: 301
-            text: "The Monks of Cool, whose tiny and exclusive monastery is hidden in a really cool and laid-back valley in the lower Ramtops, have a passing-out test for a novice. He is taken into a room full of all types of clothing and asked: Yo, my son, which of these is the most stylish thing to wear? And the correct answer is: Hey, whatever I select."
             comments: ""
             source: "Terry Pratchett, Lords and Ladies"
         -
@@ -1640,18 +1506,8 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Maskerade"
         -
-            id: 316
-            text: "It was done far more often than the audiences ever realized -- when singers had a sore throat, or had completely dried, or had turned up so drunk they could barely stand, or, in one notorious instance many years previously, had died in the interval and subsequently sung their famous aria by means of a broom-handle stuck up their back and their jaw operated with a piece of string."
-            comments: ""
-            source: "Terry Pratchett, Maskerade"
-        -
             id: 317
             text: "After you'd known Christine for any length of time, you found yourself fighting a desire to look into her ear to see if you could spot daylight coming the other way."
-            comments: ""
-            source: "Terry Pratchett, Maskerade"
-        -
-            id: 318
-            text: "\"Well, basically there are two sorts of opera,' said Nanny, who also had the true witch's ability to be confidently expert on the basis of no experience whatsoever. 'There's your heavy opera, where basically people sing foreign and it goes like \"Oh oh oh, I am dyin', oh, I am dyin', oh, oh, oh, that's what I'm doin'\", and there's your light opera, where they sing in foreign and it basically goes \"Beer! Beer! Beer! Beer! I like to drink lots of beer!\", although sometimes they drink champagne instead. That's basically all of opera, reely.\""
             comments: ""
             source: "Terry Pratchett, Maskerade"
         -
@@ -1820,11 +1676,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Mort"
         -
-            id: 352
-            text: "The only things known to go faster than ordinary light is monarchy, according to the philosopher Ly Tin Weedle. He reasoned like this: you can't have more than one king, and tradition demands that there is no gap between kings, so when a king dies the succession must therefore pass to the heir *instantaneously*. Presumably, he said, there must be some elementary particles -- kingons, or possibly queons -- that do this job, but of course succession sometimes fails if, in mid-flight, they strike an anti-particle, or republicon. His ambitious plans to use his discovery to send messages, involving the careful torturing of a small king in order to modulate the signal, were never fully expanded because, at that point, the bar closed."
-            comments: ""
-            source: "Terry Pratchett, Mort"
-        -
             id: 353
             text: "I DON'T KNOW ABOUT YOU, he said, BUT I COULD MURDER A CURRY."
             comments: "Death addresses his new apprentice"
@@ -1893,11 +1744,6 @@ Quote_Terry:
             id: 366
             text: "\"Woof bloody woof.\""
             comments: "Gaspode the Wonder Dog"
-            source: "Terry Pratchett, Moving Pictures"
-        -
-            id: 367
-            text: "No-one would have believed, in the final years of the Century of the Fruitbat, that Discworld affairs were being watched keenly and impatiently by intelligences greater than Man's, or at least much nastier; that their affairs were being scrutinised and studied as a man with a three-day appetite might study the All-You-Can-Gobble-For-A-Dollar menu outside Harga's House of Ribs..."
-            comments: ""
             source: "Terry Pratchett, Moving Pictures"
         -
             id: 368
@@ -2177,11 +2023,6 @@ Quote_Terry:
         -
             id: 423
             text: "Basically, there were two sides to the world. There was the entire computer games software industry engaged in a tremendous effort to stamp out piracy, and there was Wobbler. Currently, Wobbler was in front."
-            comments: ""
-            source: "Terry Pratchett, Only You Can Save Mankind"
-        -
-            id: 424
-            text: "Wobbler had written an actual computer game like this once. It was called\n\"Journey to Alpha Centauri\". It was a screen with some dots on it. Because, he said, it happened in *real time*, which no-one had ever heard of until computers. He'd seen on TV that it took three thousand years to get to Alpha Centauri. He had written it so that if anyone kept their computer on for three thousand years, they'd be rewarded by a little dot appearing in the middle of the screen, and then a message saying, \"Welcome to Alpha Centauri. Now go home.\""
             comments: ""
             source: "Terry Pratchett, Only You Can Save Mankind"
         -
@@ -2610,11 +2451,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Small Gods"
         -
-            id: 510
-            text: "\"That's why it's always worth having a few philosophers around the place. One minute it's all Is Truth Beauty and Is Beauty Truth, and Does A Falling Tree in the Forest Make A Sound if There's No one There to Hear It, and then just when you think they're going to start dribbling one of 'em says, Incidentally, putting a thirty-foot parabolic reflector on a high place to shoot the rays of the sun at an enemy's ships would be a very interesting demonstration of optical principles.\""
-            comments: "The many and varied advantages of philosophy"
-            source: "Terry Pratchett, Small Gods"
-        -
             id: 511
             text: "Until an unfortunate axe incident, Gloria had been captain of the school basketball team."
             comments: ""
@@ -2705,11 +2541,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Soul Music"
         -
-            id: 529
-            text: "He did of course sometimes have people horribly tortured to death, but this was considered to be perfectly acceptable behaviour for a civic ruler and generally approved of by the overhelming majority of citizens. [footnote: The overhelming majority of citizens being defined in this case as everyone not currently hanging upside down over a scorpion pit]"
-            comments: ""
-            source: "Terry Pratchett, Sourcery"
-        -
             id: 530
             text: "There were a few seconds of total silence as everyone waited to see what would happen next. And then Nijel uttered the battle cry that Rincewind would never quite forget to the end of his life.  \"Erm,\" he said, \"excuse me...\""
             comments: ""
@@ -2798,17 +2629,12 @@ Quote_Terry:
         -
             id: 547
             text: "On the fifth day the Governor of the town called all the tribal chieftains to an audience in the market square, to hear their grievances. He didn't always do anything about them, but at least they got *heard*, and he nodded a lot, and everyone felt better about it at least until they got home. This is politics."
-            comments: "Carpet politics are very similar to Discworld politics"
-            source: "Terry Pratchett, The Carpet People"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 548
             text: "\"He's a man of few words, and he doesn't know what either of them mean,\" people said, but not when he was within hearing."
             comments: ""
-            source: "Terry Pratchett, The Carpet People"
-        -
-            id: 549
-            text: "\"My house is your house\", his brow suddenly furrowed and he looked worried,\n\"although only in a metaphorical sense, you understand, because I would not, much as I always admired your straightforward approach, and indeed your forthright stance, actually *give* you my house, it being the only house I have, and therefore the term is being extended in an, as it were, gratuitous fashion --\" Owlglass was clearly having some trouble getting to the end of the sentence."
-            comments: "Carpet philosophers at work"
             source: "Terry Pratchett, The Carpet People"
         -
             id: 550
@@ -2831,18 +2657,8 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, The Dark Side of the Sun"
         -
-            id: 554
-            text: "The one positive thing you could say about the bread products around him was that they were probably as edible now as they were on the day they were baked. *Forged* was a better term. Dwarf bread was made as a meal of last resort and also as a weapon and a currency. Dwarfs were not, as far as Vimes knew, religious in any way, but the way they thought about bread came close."
-            comments: ""
-            source: "Terry Pratchett, The Fifth Elephant"
-        -
             id: 555
             text: "You did something because it had always been done, and the explanation was\n\"but we've always done it this way.\" A million dead people can't have been wrong, can they?"
-            comments: ""
-            source: "Terry Pratchett, The Fifth Elephant"
-        -
-            id: 556
-            text: "Sam Vimes could parallel process. Most husbands can. They learn to follow their own line of thought while at the same time listening to what their wives say. And the listening is important, because at any time they could be challenged and must be ready to quote the last sentence in full. A vital additional skill is being able to scan the dialogue for telltale phrases such as \"and they can deliver it tomorrow\" or \"so I've invited them for dinner?\" or \"they can do it in blue, really quite cheaply.\""
             comments: ""
             source: "Terry Pratchett, The Fifth Elephant"
         -
@@ -2853,16 +2669,6 @@ Quote_Terry:
         -
             id: 558
             text: "He wasn't strictly aware of it, but he treated even geography as if he was investigating a crime (did you see who carved out the valley? Would you recognize that glacier if you saw it again?)"
-            comments: ""
-            source: "Terry Pratchett, The Fifth Elephant"
-        -
-            id: 559
-            text: "He was aware that a wise man should always respect the folkways of others, to use Carrot's happy phrase, but Vimes often had difficulty with this idea. For one thing, there were people in the world whose folkways consisted of gutting other people like clams and this was not a procedure that commanded, in Vimes, any kind of respect at all."
-            comments: ""
-            source: "Terry Pratchett, The Fifth Elephant"
-        -
-            id: 560
-            text: "It was funny how people were people everywhere you went, even if the people concerned weren't the people the people who made up the phrase \"people are people everywhere\" had traditionally thought of as people. And even if you weren't virtuous, as you had been brought up to understand the term, you did like to see virtue in other people, provided it didn?t cost you anything."
             comments: ""
             source: "Terry Pratchett, The Fifth Elephant"
         -
@@ -2884,11 +2690,6 @@ Quote_Terry:
             id: 564
             text: "\"When it's time to stop living, I will certainly make Death my number one choice!\""
             comments: ""
-            source: "Terry Pratchett, The Last Continent"
-        -
-            id: 565
-            text: "- \"I think there may be one or two steps in your logic that I have failed   to grasp, Mister Stibbons,\" said the Archchancellor coldly. \"I suppose   you're not intending to shoot your own grandfather, by any chance?\"\n- \"Of course not!\" snapped Ponder, \"I don't even know what he looked like.   He died before I was born.\"\n- \"Ah-*hah*!\""
-            comments: "The faculty members of Unseen University discuss time travel"
             source: "Terry Pratchett, The Last Continent"
         -
             id: 566
@@ -2978,8 +2779,8 @@ Quote_Terry:
         -
             id: 583
             text: "The old shaman said carefully, \"You didn't just see two men go through upside down on a broomstick, shouting and screaming at each other, did you?\" The boy looked at him levelly. \"Certainly not,\" he said. The old man heaved a sigh of relief. \"Thank goodness for that,\" he said. \"Neither did I.\""
-            comments: "Rincewind and Twoflower take up broomstick flying"
-            source: "Terry Pratchett, The Light Fantastic"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 584
             text: "Something small and distant broke through the cloud layer, trailing shreds of vapour. In the stratospheric calm the sounds of bickering came sharp and clear.\n\"You said you could fly one of these things!\"\n\"No I didn't; I just said *you* couldn't!\""
@@ -3002,11 +2803,6 @@ Quote_Terry:
             comments: "Cohen the Barbarian interrogates Rincewind"
             source: "Terry Pratchett, The Light Fantastic"
         -
-            id: 588
-            text: "The point that must be made is that although Herrena the Henna-Haired Harridan would look quite stunning after a good bath, a heavy-duty manicure, and the pick of the leather racks in Woo Hung Ling's Oriental Exotica and Martial Aids on Heroes Street, she was currently quite sensibly dressed in light chain mail, soft boots, and a short sword. All right, maybe the boots were leather. But not black."
-            comments: ""
-            source: "Terry Pratchett, The Light Fantastic"
-        -
             id: 589
             text: "\"Students made it long ago,\" said Rincewind. \"Handy way in and out after lights out.\"\n\"Ah,\" said Twoflower, \"I *understand*. Over the wall and out to brightly-lit tavernas to drink and sing and recite poetry, yes?\"\n\"Nearly right except for the singings and the poetry, yes,\" said Rincewind."
             comments: ""
@@ -3017,16 +2813,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, The Light Fantastic"
         -
-            id: 591
-            text: "- \"If you're going to suggest I try dropping twenty feet down a pitch dark   tower in the hope of hitting a couple of greasy little steps which might   not even still be there, you can forget it,\" said Rincewind sharply.\n- \"There is an alternative, then.\"\n- \"Out with it, man.\"\n- \"You could drop five hundred feet down a pitch black tower and hit stones   which certainly are there,\" said Twoflower. Dead silence from below him. Then Rincewind said, accusingly, \"That was sarcasm.\""
-            comments: ""
-            source: "Terry Pratchett, The Light Fantastic"
-        -
-            id: 592
-            text: "The point is that descriptive writing is very rarely entirely accurate and during the reign of Olaf Quimby II as Patrician of Ankh some legislation was passed in a determined attempt to put a stop to this sort of thing and introduce some honesty into reporting. Thus, if a legend said of a notable here that \"all men spoke of his prowess\" any bard who valued his life would add hastily \"except for a couple of people in his home village who thought he was a liar, and quite a lot of other people who had never really heard of him.\""
-            comments: ""
-            source: "Terry Pratchett, The Light Fantastic"
-        -
             id: 593
             text: "There were no flies on C.M.O.T Dibbler. He would have charged them rent."
             comments: ""
@@ -3034,11 +2820,6 @@ Quote_Terry:
         -
             id: 594
             text: "The world is made up of four elements: Earth, Air, Fire and Water. This is a fact well known even to Corporal Nobbs. It's also wrong. There's a fifth element, and generally it's called Surprise."
-            comments: ""
-            source: "Terry Pratchett, The Truth"
-        -
-            id: 595
-            text: "There are, it has been said, two types of people in the world. There are those who, when presented with a glass that is exactly half full, say: this glass is half full. And then there are those who say: this glass is half empty.\nThe world *belongs*, however, to those who can look at the glass and say: What's up with this glass? Excuse me? Excuse *me*? This is my glass? I don't *think* so. My glass was full! *And* it was a bigger glass!"
             comments: ""
             source: "Terry Pratchett, The Truth"
         -
@@ -3109,8 +2890,8 @@ Quote_Terry:
         -
             id: 609
             text: "Consider the situation. There you are, forehead like a set of balconies, worrying about the long-term effects of all this new 'fire' stuff on the environment, you're being chased and eaten by most of the planet's large animals, and suddenly tiny versions of one of the worst of them wanders into the cave and starts to purr."
-            comments: "Why humans like cats"
-            source: "Terry Pratchett, The Unadulterated Cat"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 610
             text: "\"Zoology, eh? That's a big word, isn't it?\"\n\"No, actually it isn't,\" said Tiffany. \"Patronizing is a big word. Zoology is really quite short.\""
@@ -3149,11 +2930,6 @@ Quote_Terry:
         -
             id: 617
             text: "Even with nougat you can have a perfect moment."
-            comments: ""
-            source: "Terry Pratchett, Thief of Time"
-        -
-            id: 618
-            text: "In the second scroll of Wen the Eternally Surprised a story is written concerning one day when the apprentice Clodpool, in a rebellious mood, approached Wen and spake thusly:\n\"Master, what is the difference between a humanistic, monastic system of belief in which wisdom is sought by means of an apparently nonsensical system of questions and answers, and a lot of mystic gibberish made up on the spur of the moment?\" Wen considered this for some time, and at last said: \"A fish!\" And Clodpool went away, satisfied."
             comments: ""
             source: "Terry Pratchett, Thief of Time"
         -
@@ -3208,11 +2984,6 @@ Quote_Terry:
             comments: ""
             source: "Terry Pratchett, Wings"
         -
-            id: 629
-            text: "Nomes live ten times faster than humans. They're harder to see than a high- speed mouse. That's one reason why most humans hardly ever see them. The other is that humans are very good at not seeing things they know aren't there. And, since sensible humans know that there are no such things as people four inches high, a nome who doesn't want to be seen probably won't be seen."
-            comments: ""
-            source: "Terry Pratchett, Wings"
-        -
             id: 630
             text: "And then there were the frogs. Very, very small frogs. They had such a tiny life cycle it still had trainer wheels on it."
             comments: ""
@@ -3262,19 +3033,8 @@ Quote_Terry:
         -
             id: 639
             text: "- \"Very clever idea, though.\"\n- \"What is?\"\n- \"Asking the questions when people arrive. If anyone was coming here to    do some subversive overthrowing, everyone'd be down on him like a pound of    bricks as soon as he answered 'Yes'.\"\n- \"It's a sneaky trick, isn't it,\" said Angalo, in an admiring tone of    voice."
-            comments: "The nomes encounter American customs regulations"
-            source: "Terry Pratchett, Wings"
-        -
-            id: 640
-            text: "- \"What's the human singing about, Thing?\" said Masklin.\n- \"It is a little difficult to follow. However, it appears that the singer    wishes it to be known that he did something his way.\"\n- \"Did what?\"\n- \"Insufficient data at this point. But whatever it was, he did it at    a) each step along life's highway and b) not in a shy way...\""
-            comments: ""
-            source: "Terry Pratchett, Wings"
-        -
-            id: 641
-            text: "FLORIDA (or FLORIDIA): A place where may be found ALLIGATORS, LONG-NECKED TURTLES and SPACE SHUTTLES. An interesting place which is warm and wet and there are geese. BACON, LETTUCE AND TOMATO SANDWICHES may be found here also. A lot more interesting than many other places. The shape when seen from the air is like a bit stuck on a bigger bit."
-            comments: "From A Scientific Encyclopedia for the Enquiring Young Nomeby Angalo de Haberdasheri
-"
-            source: "Terry Pratchett, Wings"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 642
             text: "SATELLITES: They are in SPACE and stay there by going so fast that they are never in one place enough to fall down. TELEVISIONS are bounced off them. They are part of SCIENCE."
@@ -3284,14 +3044,8 @@ Quote_Terry:
         -
             id: 643
             text: "SCIENCE: A way of finding things out and then making them work. Science explains what is happening around us the whole time. So does RELIGION, but science is better because it comes up with more understandable excuses when it is wrong. There is a lot more Science than you think."
-            comments: "From A Scientific Encyclopedia for the Enquiring Young Nomeby Angalo de Haberdasheri
-"
-            source: "Terry Pratchett, Wings"
-        -
-            id: 644
-            text: "\"All right,\" said Masklin. \"But you're not to fly down low again and try to read the signposts. Every time you do that, humans rush into the streets and we get lots of shouting on the radio.\"\n\"That's right.\" said the Thing. \"People are bound to get excited when they see a ten-million-ton starship trying to fly down the street.\""
-            comments: ""
-            source: "Terry Pratchett, Wings"
+            comments:  ""
+            source: "Terry Pratchett"
         -
             id: 645
             text: "The Yen Buddhists are the richest religious sect in the universe. They hold that the accumulation of money is a great evil and a burden to the soul. They therefore, regardless of personal hazard, see it as their unpleasant duty to acquire as much as possible in order to reduce the risk to innocent people."
@@ -3350,11 +3104,6 @@ Quote_Terry:
         -
             id: 656
             text: "\"You can't go around building a better world for people. Only people can build a better world for people. Otherwise it's just a cage.\""
-            comments: ""
-            source: "Terry Pratchett, Witches Abroad"
-        -
-            id: 657
-            text: "Bad spelling can be lethal. For example, the greedy Seriph of Al-Yabi was cursed by a badly-educated deity and for some days everything he touched turned to Glod, which happened to be the name of a small dwarf from a mountain community hundreds of miles away who found himself magically dragged to the kingdom and relentlessly duplicated. Some two thousand Glods later the spell wore off. These days, the people of Al-Yabi are renowned for being remarkably short and bad-tempered."
             comments: ""
             source: "Terry Pratchett, Witches Abroad"
         -

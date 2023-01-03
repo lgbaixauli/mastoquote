@@ -41,16 +41,16 @@ testing:
   # [String] Test word in toot
   text_word: "test"
   # [Bool] Disable push the answer to Mastodon
-  ignore_test_toot: True
+  ignore_test_toot: False
   # [Bool] Disable push the answer to Mastodon
-  disable_post: False
+  disable_post: True
   # [Bool] Disable push the answer to Mastodon
-  disable_dismiss: False
+  disable_dismiss: True
 
 # Logging config
 logger:
   # [Integer] Log level: NOTSET=0 | DEBUG=10 | INFO=20 | WARN=30 | ERROR=40 | CRITICAL=50
-  loglevel: 20
+  loglevel: 10
   # [String] Name of the logger
   name: "mastoquote_bot"
   # [Bool] Dump the log into a file

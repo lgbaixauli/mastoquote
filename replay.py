@@ -1,19 +1,16 @@
-###
-# Mastoreplay, bot para contestar notificaciones con citas en Mastodon
-# Inspirado en el bot "info" original de @spla@mastodont.cat
-# En https://git.mastodont.cat/spla/info
-###  
-
-from pybot.mastobot import Mastobot
-from pyboy.config import Config
-from pyboy.logger import Logger
-from pybot.translator import Translator
+"""
+Mastoreplay, bot para contestar notificaciones, en este caso con citas, en Mastodon
+Inspirado (pero a cada refactorización más lejos) en el bot "info" original de @spla@mastodont.cat
+En https://git.mastodont.cat/spla/info
+"""
 
 import random
+from pybot.mastobot import Mastobot
 
 BOT_NAME = "Replaybot"
 
 class Bot(Mastobot):
+    """ Main class of a Mastodon bot """
 
     def __init__(self, botname: str = BOT_NAME) -> None:
 
@@ -29,14 +26,14 @@ class Bot(Mastobot):
 
         for notif in notifications:
 
-            action   = self._actions["Quote_HAL"]   
+            action   = self._actions["Quote_HAL"]
             replay, dismiss1 = self.process_notif(notif, "mention", action["keyword"])
             if replay:
                 self.replay_toot(self.find_text(notif, action), notif)
-     
+
             action   = self._actions["Quote_Terry"]
             replay, dismiss2 = self.process_notif(notif, "mention", action["keyword"])
-            if replay: 
+            if replay:
                 self.replay_toot(self.find_text(notif, action), notif)
 
             if dismiss1 and dismiss2:
@@ -45,7 +42,8 @@ class Bot(Mastobot):
         super().run(botname = botname)
 
 
-    def find_text(self, notif, action):        
+    def find_text(self, notif, action):
+        """ find the text to post """
 
         language = notif.status.language
         username = notif.account.acct
@@ -53,15 +51,15 @@ class Bot(Mastobot):
         keyword  = action["keyword"]
         quotes   = action["quotes"]
         quote    = random.choice(quotes)
- 
-        self._logger.debug("notif language: " + language)                    
-        self._logger.debug("notif name    : " + name)                    
-        self._logger.debug("notif keyword : " + keyword)                    
+
+        self._logger.debug("notif language: %s", language)
+        self._logger.debug("notif name    : %s", name)
+        self._logger.debug("notif keyword : %s", keyword)
 
         self._translator.fix_language (language)
         _text     = self._translator.get_text
-    
-        self._logger.debug ("quote id: " + str(quote["id"]))
+
+        self._logger.debug ("quote id: %i", quote["id"])
 
         post_text  = "@" + username + ":\n\n" + quote["text"] + "\n"
 
@@ -74,10 +72,11 @@ class Bot(Mastobot):
                 post_text = post_text + quote["source"] + "\n"
 
         post_text += "\n"
-        post_text += "(" + _text("mencion") + " \"" + keyword + "\" " + _text("respuesta") + " " + name + ")"
+        post_text += "(" + _text("mencion") + " \"" + keyword + "\" " + \
+            _text("respuesta") + " " + name + ")"
         post_text  = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
 
-        self._logger.debug ("answering text\n" + post_text)
+        self._logger.debug ("answering text\n %s", post_text)
 
         return post_text
 

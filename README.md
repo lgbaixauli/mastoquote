@@ -30,9 +30,9 @@ Within Python Virtual Environment:
 
 5. Modify options in the `config.yaml` file. For exemple, the keywords or the access type to the Mastodon account.
 
-6. It's possible to fill in the config yaml the cliend id, cliend secret and access token of an application created in the Mastodon web (with de "development" opction). Also, it's possilbe to indicate credentials access and run `python3 quote.py` manually once to setup and get its access token to Mastodon instance.
+6. It's possible to fill in the config yaml the cliend id, cliend secret and access token of an application created in the Mastodon web (with de "development" opction). Also, it's possilbe to indicate credentials access and run `python3 replay.py` manually once to setup and get its access token to Mastodon instance.
 
-7. Use your favourite scheduling method to set `quote.sh` to run every minute. For example,  add  `* * * * * /home/user_name/mastoreplay/replay.sh 2>&1 | /usr/bin/logger -t MASTOREPLAY` in `crontab -e`. The system and error log will be in `/var/log/syslog`. 
+7. Use your favourite scheduling method to set `replay.sh` to run every minute. For example,  add  `* * * * * /home/user_name/mastoreplay/replay.sh 2>&1 | /usr/bin/logger -t MASTOREPLAY` in `crontab -e`. The system and error log will be in `/var/log/syslog`. 
 
    Don't forgot the execution privilegies `chmod +x replay.sh`. 
    Don't forgot update the user_name in `replay.sh`

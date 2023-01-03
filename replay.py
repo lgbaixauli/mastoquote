@@ -1,5 +1,5 @@
 ###
-# Mastoquote, bot para publicar citas en Mastodon
+# Mastoreplay, bot para contestar notificaciones con citas en Mastodon
 # Inspirado en el bot "info" original de @spla@mastodont.cat
 # En https://git.mastodont.cat/spla/info
 ###  
@@ -11,7 +11,7 @@ from pybot.translator import Translator
 
 import random
 
-BOT_NAME = "Quotebot"
+BOT_NAME = "Replaybot"
 
 class Bot(Mastobot):
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/mastoquote/mastoquote/
+cd /home/mastoreplay/mastoreplay/
 
 sed -i 's/ignore_test_toot: True/ignore_test_toot: False/g' config.yaml
 sed -i 's/disable_post: False/disable_post: True/g' config.yaml

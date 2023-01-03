@@ -4,10 +4,10 @@
 # En https://git.mastodont.cat/spla/info
 ###  
 
-from bundle.mastobot import Mastobot
-from bundle.config import Config
-from bundle.logger import Logger
-from bundle.translator import Translator
+from pybot.mastobot import Mastobot
+from pyboy.config import Config
+from pyboy.logger import Logger
+from pybot.translator import Translator
 
 import random
 

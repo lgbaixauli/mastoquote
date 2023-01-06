@@ -23,21 +23,16 @@ class Bot(Mastobot):
     def run(self, botname: str = BOT_NAME) -> None:
 
         notifications = self.mastodon.notifications()
-
         for notif in notifications:
 
-            action   = self._actions["Quote_HAL"]
-            replay, dismiss1 = self.process_notif(notif, "mention", action["keyword"])
-            if replay:
-                self.replay_toot(self.find_text(notif, action), notif)
+            content = self.check_notif(notif, "mention")
 
-            action   = self._actions["Quote_Terry"]
-            replay, dismiss2 = self.process_notif(notif, "mention", action["keyword"])
-            if replay:
-                self.replay_toot(self.find_text(notif, action), notif)
-
-            if dismiss1 and dismiss2:
-                self.mastodon.notifications_dismiss(notif.id)
+            if content != "":
+                content_list = content.split()
+                if self._actions.get("Quote_HAL.keyword").lower() in content_list: 
+                    self.replay_toot (self.find_text(notif, self._actions.get("Quote_HAL")), notif)
+                elif self._actions.get("Quote_Terry.keyword").lower() in content_list: 
+                    self.replay_toot (self.find_text(notif, self._actions.get("Quote_Terry")), notif)
 
         super().run(botname = botname)
 

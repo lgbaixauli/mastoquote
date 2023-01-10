@@ -71,7 +71,7 @@ class Bot(Mastobot):
             _text("respuesta") + " " + name + ")"
         post_text  = (post_text[:MAX_LENGHT] + '... ') if len(post_text) > MAX_LENGHT else post_text
 
-        self._logger.debug ("answering text\n %s", post_text)
+        self._logger.debug ("answering text\n%s", post_text)
 
         return post_text
 

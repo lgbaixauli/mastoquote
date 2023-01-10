@@ -8,6 +8,7 @@ import random
 from pybot.mastobot import Mastobot
 
 BOT_NAME = "Replaybot"
+MAX_LENGHT = 490
 
 class Bot(Mastobot):
     """ Main class of a Mastodon bot """
@@ -44,8 +45,7 @@ class Bot(Mastobot):
         username = notif.account.acct
         name     = action["name"]
         keyword  = action["keyword"]
-        quotes   = action["quotes"]
-        quote    = random.choice(quotes)
+        quote    = random.choice(action["quotes"])
 
         self._logger.debug("notif language: %s", language)
         self._logger.debug("notif name    : %s", name)
@@ -54,26 +54,27 @@ class Bot(Mastobot):
         self._translator.fix_language (language)
         _text     = self._translator.get_text
 
-        self._logger.debug ("quote id: %i", quote["id"])
+        self._logger.debug ("quote id: %i", quote[0])
 
-        post_text  = "@" + username + ":\n\n" + quote["text"] + "\n"
+        post_text  = "@" + username + ":\n\n" + quote[1] + "\n"
 
-        if "comments" in quote:
-            if quote["comments"] != "":
-                post_text = post_text + quote["comments"] + "\n"
-
-        if "source" in quote:
-            if quote["source"] != "":
-                post_text = post_text + quote["source"] + "\n"
+        # comments
+        if quote[2] != "":
+            post_text = post_text + quote[2] + "\n"
+        
+        # source
+        if quote[3] != "":
+            post_text = post_text + quote[3] + "\n"
 
         post_text += "\n"
         post_text += "(" + _text("mencion") + " \"" + keyword + "\" " + \
             _text("respuesta") + " " + name + ")"
-        post_text  = (post_text[:400] + '... ') if len(post_text) > 400 else post_text
+        post_text  = (post_text[:MAX_LENGHT] + '... ') if len(post_text) > MAX_LENGHT else post_text
 
         self._logger.debug ("answering text\n %s", post_text)
 
         return post_text
+
 
 
 # main
